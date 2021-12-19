@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let s = prompt('Nhập một chuỗi: ')
+        let arr = s.split(' ');
+        let count = arr.length;
+        for (let i = 0; i< arr.length; i++){
+            if (arr[i] === ''){
+                count--;
+            }
+        }
+        document.write(`Chuỗi đã nhập ${s} có ${count} từ`);
+</script>
+</body>
+</html>
